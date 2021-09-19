@@ -2,7 +2,6 @@ import { expect, Page, test } from "@playwright/test";
 import CommonFunctions from "../pages/common.page";
 import HeaderPage from "../pages/header.page";
 import LoginPage from "../pages/login.page";
-import Env from "../utils/env";
 import * as data from "../data/login.cred.json";
 
 test.describe("TC0001_Login", () => {
