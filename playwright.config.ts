@@ -7,7 +7,7 @@ const config: PlaywrightTestConfig = {
         screenshot: "on",
         video: "on",
     },
-    testMatch: ["**.test.ts"],
+    testMatch: ["github.test.ts"],
     retries: 0,
     reporter: [["dot"], ["json", {outputFile: "test-result.json"}]]
 }

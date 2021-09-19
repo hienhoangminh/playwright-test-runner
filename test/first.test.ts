@@ -14,8 +14,6 @@ test.describe("Test suite Letcode", () => {
   });
 
   test("Open letcode and login", async () => {
-    // const title = await page.title();
-    // expect(title).toBe("LetCode with Koushi");
     await Promise.all([
       page.waitForNavigation(),
       page.click("text=/.*Log in.*/"),

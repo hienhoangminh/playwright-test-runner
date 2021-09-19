@@ -3,7 +3,6 @@ import test from "@playwright/test";
 test("Interact with shadow DOM", async({page}) => {
     await page.goto("https://letcode.in/shadow");
     await page.fill("#fname", "koushik");
-    await page.waitForTimeout(7000);
 });
 
 test("Chromium bug app", async({page}) => {
@@ -15,6 +14,4 @@ test("Chromium bug app", async({page}) => {
        });
     }else throw new Error("Element not found");
     await page.fill("#searchq", "some bug");
-    await page.waitForTimeout(7000);
-
 });
