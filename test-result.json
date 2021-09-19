@@ -1,0 +1,101 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/hienhoang/Desktop/playwright-test-runner/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "",
+        "testDir": "/Users/hienhoang/Desktop/playwright-test-runner",
+        "testIgnore": [],
+        "testMatch": [
+          "github.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-result.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "/Users/hienhoang/Desktop/playwright-test-runner",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "test/github.test.ts",
+      "file": "test/github.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "Medimum case",
+          "ok": false,
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "timedOut",
+                  "duration": 33142,
+                  "error": {
+                    "message": "Pending operations:\n  - page.goto at test/github.test.ts:14:16\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://opengiro.ing.de/pub/girokonto-einzelkonto\", waiting until \"load\"\n============================================================",
+                    "stack": "Pending operations:\n  - page.goto at test/github.test.ts:14:16\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://opengiro.ing.de/pub/girokonto-einzelkonto\", waiting until \"load\"\n============================================================\n    at /Users/hienhoang/Desktop/playwright-test-runner/test/github.test.ts:14:16\n    at FixtureRunner.resolveParametersAndRunHookOrTest (/Users/hienhoang/Desktop/playwright-test-runner/node_modules/@playwright/test/lib/test/fixtures.js:301:12)\n    at WorkerRunner._runTestWithBeforeHooks (/Users/hienhoang/Desktop/playwright-test-runner/node_modules/@playwright/test/lib/test/workerRunner.js:425:7)"
+                  },
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/hienhoang/Desktop/playwright-test-runner/test-results/test-github-Medimum-case/39b01110c935ddc70b3cc2642f5e990c.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/hienhoang/Desktop/playwright-test-runner/test-results/test-github-Medimum-case/test-failed-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "file": "test/github.test.ts",
+          "line": 13,
+          "column": 6
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
